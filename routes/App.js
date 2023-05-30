@@ -20,7 +20,6 @@ const App = async () => {
     footer.innerHTML = Footer();
     let ruta = resolverRutas(getHash());
     let pagina = (Rutas[ruta]) ? Rutas[ruta] : false;
-    console.log(pagina);
     main.innerHTML = pagina;
 
 }
