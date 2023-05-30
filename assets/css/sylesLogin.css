@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+:root{
+    --color-yelow:#f4eeb4;
+    --color-green:#acc4a0;
+    --color-medium-green:#55897d;
+    --color-dark-green:#425454;
+    --color-brown: #7b564e;
+    --color-white:#fff;
+    --color-black:#494949;
+    --color-fesc:#a4130e;
+    --color-rojo-claro: #e34e49;
+    --font-sm: 1rem;
+    --font-md: 1.2rem;
+    --font-lg: 1.4rem;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    padding: 0%;
+    margin: 0%;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+
+
+}
+nav{
+    background-color: var(--color-fesc);
+    position: fixed;
+    width: 100%;
+
+}
+nav .logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5px;
+}
+nav .logo img {
+    height: 100px;
+    width: auto;
+    
+}
+
+.login{
+    width: 100%;
+    height: 100vh;
+    background-color: none;
+
+    display: grid;
+    place-items: center;
+
+}
+
+.login .form-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 350px;
+}
+
+.login .form-container .logo{
+    width: 200px;
+    margin-bottom: 50px;
+    justify-self: center;
+    display: none;
+}
+
+.login .form-container .form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login .form-container .form .label{
+    font-size: var(--font-sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+
+}
+
+.login .form-container .form .input{
+    background-color: var(--color-white);
+    border: none;
+    border-radius: 8px;
+    height: 28px;
+    font-size: var(--font-sm);
+    padding: 4px;
+    margin-bottom: 12px;
+    
+
+}
+
+.login .form-container .form .primary-btn{
+    background-color: var(--color-fesc);
+    border-radius: 8px;
+    border: none;
+    color: var(--color-white);
+    height: 40px;
+    width: 100%;
+    font-size: var(--font-md);
+    font-weight: bold;
+    margin-bottom: 16px;    
+    transition: all 0.3s;
+
+}
+.login .form-container .form .primary-btn:hover{
+    background-color: var(--color-rojo-claro);
+}
+
+.login .form-container .form a{
+    text-decoration: none;
+    color: var(--color-fesc);
+    font-weight: bold;
+    font-size: medium;
+    text-align: right;
+    margin-bottom: 52px;
+
+}
+
+.login .form-container .secondary-btn{
+    background-color:var(--color-fesc);
+    color: var(--color-white);
+    border-radius: 8px;
+    border: 1px;
+    width: 100%;
+    height: 40px;
+    font-size: var(--font-md);
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.login .form-container  .secondary-btn:hover{
+    background-color: var(--color-rojo-claro);
+    color: var(--color-white);
+
+}
+
+@media(max-width: 640px){
+    nav .logo{
+        display: none;
+
+    }
+
+    .login .form-container .logo{
+        display: block;
+    }
+
+    .login .form-container .secondary-btn{
+        position: absolute;
+        bottom: 24px;
+        width: inherit;
+ 
+    }
+}
+
+.rol{
+    font-family: Arial Black;
+    font-size: small;
+    margin-top: -80px;
+}
+
+.acronimo{
+    color: var(--color-white);
+    font-size: var(--font-sm);
+    font-weight: bold;
+    text-align: right;
+    margin-top: -40px;
+    margin-right: 10px;
+}
+
